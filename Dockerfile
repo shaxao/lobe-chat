@@ -50,19 +50,19 @@ COPY --from=sharp --chown=nextjs:nodejs /app/node_modules/.pnpm ./node_modules/.
 
 USER nextjs
 
-EXPOSE 3210
+EXPOSE 9000
 
 # set hostname to localhost
 ENV HOSTNAME "0.0.0.0"
-ENV PORT=3210
+ENV PORT=9000
 
 # General Variables
-ENV ACCESS_CODE "lobe66"
+ENV ACCESS_CODE "lw2000314"
 ENV CUSTOM_MODELS ""
 
 # OpenAI
-ENV OPENAI_API_KEY ""
-ENV OPENAI_PROXY_URL ""
+ENV OPENAI_API_KEY "sk-8hO1JDJfMRfnuEjKrfkPodjJgOdvbcf4Fz0GlB7tqcO5Lm4T"
+ENV OPENAI_PROXY_URL "api.chatanywhere.cn"
 
 # Azure OpenAI
 ENV USE_AZURE_OPENAI ""
